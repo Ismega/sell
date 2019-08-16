@@ -1,0 +1,15 @@
+#  logging:
+#    pattern:
+#      console: "%d - %msg%n"
+#    file: /var/log/tomcat/sell.log
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.43.150/mega?characterEncoding=UTF8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+    password: 123456
+    username: root
+  jpa:
+    show-sql: true
+server:
+  servlet:
+    context-path: /sell
